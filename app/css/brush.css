@@ -1,0 +1,314 @@
+@charset "UTF-8";
+.brush {
+    position: absolute;
+    top: 74px;
+    left: 57px;
+    width: 646px;
+    height: 1013px;
+    background: url("../images/brushFaceBg_03.png") no-repeat;
+}
+
+.brush .title {
+    width: 288px;
+    height: 53px;
+    margin: 70px auto 0;
+}
+
+.brush .brushCon {
+    position: absolute;
+    top: 150px;
+    left: 45px;
+    width: 557px;
+    height: 699px;
+    background: url("../images/brushFace.png") no-repeat;
+}
+
+.brush .brushCon .faceImg {
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    width: 461px;
+    height: 591px;
+    overflow: hidden;
+}
+.brushGrid {
+    position: absolute;
+    top: 0;
+    width: 460px;
+    height: 591px;
+    background: url("../images/brushLine.png") no-repeat;
+}
+.brush .brushCon .scanLine {
+    position: absolute;
+    top: 150px;
+    left: 75px;
+    z-index: 1;
+    width: 412px;
+    height: 414px;
+    background: url("../images/scan.png") no-repeat;
+    overflow: hidden;
+    transform: scale(0, 0) rotate(360deg);
+}
+.brush .brushCon .scanLine .line {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 31px;
+    background: url("../images/line.png") no-repeat;
+}
+
+/*瞄准小点*/
+.brush .brushCon .aim div {
+    opacity: 0;
+    position: absolute;
+}
+.brush .brushCon .aim > div:nth-child(1) {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+.brush .brushCon .aim > div:nth-child(2) {
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+}
+.brush .brushCon .aim > div:nth-child(3) {
+    -webkit-animation-delay: 3.1s;
+    animation-delay: 3.1s;
+}
+.brush .brushCon .aim > div:nth-child(4) {
+    -webkit-animation-delay: 3.4s;
+    animation-delay: 3.4s;
+}
+.brush .brushCon .aim > div:nth-child(5) {
+    -webkit-animation-delay: 3.7s;
+    animation-delay: 3.7s;
+}
+.brush .brushCon .aim > div:nth-child(6) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+.brush .brushCon .aim > div:nth-child(7) {
+    -webkit-animation-delay: 4.3s;
+    animation-delay: 4.3s;
+}
+.brush .brushCon .aim > div:nth-child(8) {
+    -webkit-animation-delay: 4.6s;
+    animation-delay: 4.6s;
+}
+.brush .brushCon .aim > div:nth-child(9) {
+    -webkit-animation-delay: 4.9s;
+    animation-delay: 4.9s;
+}
+.brush .brushCon .aim > div:nth-child(10) {
+    -webkit-animation-delay: 4.3s;
+    animation-delay: 5.2s;
+}
+.brush .brushCon .aim > div:nth-child(11) {
+    -webkit-animation-delay: 4.6s;
+    animation-delay: 5.5s;
+}
+.brush .brushCon .aim > div:nth-child(12) {
+    -webkit-animation-delay: 4.9s;
+    animation-delay: 5.8s;
+}
+
+/*执行动画*/
+.gridAnimated {
+    -webkit-animation: grid1 1.5s linear forwards;
+    -moz-animation: grid1 1.5s linear forwards;
+    -o-animation: grid1 1.5s linear forwards;
+    animation: grid1 1.5s linear forwards;
+}
+.scaleAnimated {
+    -webkit-animation: scale1 1s 7s 1 linear forwards;
+    -moz-animation: scale1 1s 7s 1 linear forwards;
+    -o-animation: scale1 1s 7s 1 linear forwards;
+    animation: scale1 1s 7s 1 linear forwards;
+}
+.animated {
+    -webkit-animation: move 1s 8s 1 linear;
+    -moz-animation: move 1s 8s 1 linear;
+    -o-animation: move 1s 8s 1 linear;
+    animation: move 1s 8s 1 linear;
+}
+.animated-aim {
+    -webkit-animation: rotate1 1s linear 1;
+    -moz-animation: rotate1 1s linear 1;
+    -o-animation: rotate1 1s linear 1;
+    animation: rotate1 1s linear 1;
+}
+.rotate {
+    -webkit-animation: rotate 2s infinite linear;
+    animation: rotate 2s infinite linear;
+}
+
+.brush .loading {
+    position: absolute;
+    bottom: 103px;
+    left: 304px;
+    width: 54px;
+    height: 56px;
+}
+
+.brush .btn {
+    position: absolute;
+    bottom: 0;
+    left: 182px;
+    width: 289px;
+    height: 80px;
+}
+
+.noticeTxt {
+    position: absolute;
+    bottom: 10px;
+    left: 140px;
+    font-size: 25px;
+    width: 510px;
+    line-height: 31px;
+    color: #fc4a70;
+}
+
+
+/*动画定义*/
+@-webkit-keyframes grid1 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100%;
+    }
+}
+@-moz-keyframes grid1 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100%;
+    }
+}
+@-o-keyframes grid1 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100%;
+    }
+}
+@keyframes grid1 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100%;
+    }
+}
+@-webkit-keyframes scale1 {
+    0% {
+        transform: scale(0, 0) rotate(360deg);
+    }
+    100% {
+        transform: scale(1, 1) rotate(0deg);
+    }
+}
+@-moz-keyframes scale1 {
+    0% {
+        transform: scale(0, 0) rotate(360deg);
+    }
+    100% {
+        transform: scale(1, 1) rotate(0deg);
+    }
+}
+@-o-keyframes scale1 {
+    0% {
+        transform: scale(0, 0) rotate(360deg);
+    }
+    100% {
+        transform: scale(1, 1) rotate(0deg);
+    }
+}
+@keyframes scale1 {
+    0% {
+        transform: scale(0, 0) rotate(360deg);
+    }
+    100% {
+        transform: scale(1, 1) rotate(0deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes move {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+@-moz-keyframes move {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+@-o-keyframes move {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+@keyframes move {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@-webkit-keyframes rotate1 {
+    0% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+    30% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+@keyframes rotate1 {
+    0% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+    30% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,134 @@
+@media screen and (max-height: 1250px) and (min-height: 1120px){
+    .scole {
+        top: 30px;
+    }
+    .btn {
+        bottom: 165px;
+    }
+    .bottomProductL {
+        bottom: 20px;
+    }
+    .scoreBtn {
+        bottom: 230px;
+    }
+    .scoreProductBall {
+        bottom: 130px;
+    }
+}
+@media screen and (max-height: 1115px) and (min-height: 1100px){
+    .operational {
+        margin: 0 auto;
+    }
+    .shopping {
+        margin: 20px auto 0;
+    }
+    .brush {
+        top: 20px;
+    }
+    .scoreBtn {
+        bottom: 120px;
+    }
+    .bottomProductL {
+        bottom: 10px;
+    }
+    .scoreProductBall {
+        bottom: 40px;
+    }
+}
+@media screen and (max-height: 1100px) and (min-height: 900px){
+    .home {
+        margin: 10px auto 0;
+    }
+    .brush {
+        top: 45px;
+        background-size: contain;
+        height: 950px;
+    }
+    .brush .brushCon {
+        height: 620px;
+        background-size: contain;
+        left: 72px;
+    }
+    .brush .brushCon .faceImg {
+        width: 400px;
+        height: 517px;
+    }
+    .brushGrid {
+        width: 400px;
+        height: 517px;
+    }
+    .brush .brushCon .faceImg img{
+        width: 100%;
+    }
+    .brush .brushCon .scanLine {
+        left: 85px;
+        width: 330px;
+        height: 344px;
+        background-size: contain;
+    }
+    .bottomProductL, .bottomProductR {
+        bottom: 0;
+    }
+    .brush .loading {
+        bottom: 120px;
+    }
+    .btn {
+        bottom: 0;
+    }
+    .brush .btn {
+        bottom: 0;
+    }
+    .operational {
+        background-size: contain;
+        width: 580px;
+        height: 980px;
+        margin: 0 auto;
+    }
+    .rightUse {
+        width: 450px;
+    }
+    .notice {
+        font-size: 25px;
+    }
+    .mySelfCenter {
+        background-size: contain;
+        height: 930px;
+        width: 600px;
+        margin: 40px auto 0;
+    }
+    .currentIntegral {
+        background-size: contain;
+        width: 560px;
+        height: 680px;
+    }
+    .currentIntegral .currentIntegralCon .txtRanking {
+        margin: 20px 0 20px;
+    }
+
+    .shopping {
+        margin: 10px auto 0;
+        background-size: contain;
+        height: 950px;
+        width: 630px;
+    }
+    .shoppingCon > div .product > div > img,
+    .shoppingCon > div .productPic > div > img {
+        width: 70%;
+    }
+    .shoppingCon > div:nth-child(1),
+    .shoppingCon > div:nth-child(2) {
+        height: 224px;
+    }
+    .faceBtn {
+        bottom: 20px;
+    }
+    .productBall {
+        bottom: 100px;
+    }
+    .scoreProductBall {
+        bottom: 10px;
+    }
+    .scoreBtn {
+        bottom: 85px;
+    }
+}

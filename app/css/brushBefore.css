@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.brush .brushCon .aim {
+
+}
+.brush .brushCon .aim div {
+    opacity: 0;
+    position: absolute;
+}
+.brush .brushCon .aim > div:nth-child(1) {
+    top: 120px;
+    left: -20px;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.brush .brushCon .aim > div:nth-child(2) {
+    top: 120px;
+    right: 0;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.brush .brushCon .aim > div:nth-child(3) {
+    bottom: 0;
+    left: 100px;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+.brush .btn input {
+    width: 289px;
+    height: 78px;
+    opacity: 0;
+}
+.brush .btn label {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 289px;
+    height: 78px;
+    background: url("../images/cameraFile.png") no-repeat;
+}
+
+.animated-aim {
+    -webkit-animation: rotate1 1s linear 1;
+    animation: rotate1 1s linear 1;
+}
+@keyframes rotate1 {
+    0% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+    30% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}

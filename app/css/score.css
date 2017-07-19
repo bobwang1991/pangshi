@@ -1,0 +1,189 @@
+@charset "UTF-8";
+.scole {
+    position: absolute;
+    top: 80px;
+    width: 750px;
+    height: 728px;
+    background: url("../images/scoleBg.png") no-repeat;
+}
+.scole .personal {
+    position: absolute;
+    top: 0;
+    left: 52px;
+    width: 251px;
+    height: 90px;
+}
+.scole .logo {
+    position: absolute;
+    top: 0;
+    right: 62px;
+    width: 203px;
+    height: 86px;
+}
+.scole .scoleStarBg {
+    position: absolute;
+    top: 105px;
+    left: 124px;
+    width: 516px;
+    height: 418px;
+    background: url("../images/scoleStarBg.png") no-repeat;
+}
+.scole .scoleStarBg .scoleStar {
+    transform: scale(0,0);
+    -webkit-animation: scale1 1s 2s 1 linear forwards;
+    animation: scale1 1s 2s linear forwards;
+}
+.scole .scoleStarBg .scoleFinal {
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    top: 110px;
+    left: 145px;
+    line-height: 60px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 1px #ff1e42;
+}
+.scole .scoleStarBg .scoleFinal span.bigTxt {
+    display: block;
+    font-size: 80px;
+    -webkit-text-stroke: 2px #ff1e42;
+}
+.smallTxt span {
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    color: #ff1e42;
+}
+.smallTxt span:nth-child(1) {
+    top: 80px;
+    left: 338px;
+}
+.smallTxt span:nth-child(2) {
+    top: 235px;
+    left: 113px;
+}
+.smallTxt span:nth-child(3) {
+    bottom: 230px;
+    left: 174px;
+}
+.smallTxt span:nth-child(4) {
+    top: 235px;
+    right: 125px;
+}
+.smallTxt span:nth-child(5) {
+    bottom: 230px;
+    right: 190px;
+}
+.txt {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 750px;
+    height: 164px;
+    background: url("../images/txtBg.png") no-repeat;
+}
+.txt p {
+    text-align: center;
+    font-size: 35px;
+}
+.txt p:first-child {
+    line-height: 45px;
+    color: #ff1e42;
+    padding-top: 10px;
+}
+.txt p:last-child {
+    line-height: 40px;
+}
+.txt p:last-child span {
+    color: #ff1e42;
+    font-size: 55px;
+}
+
+/*按钮*/
+.scoreBtn {
+    width: 645px;
+    position: absolute;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+.scoreBtn div {
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.scoreBtn div:nth-child(3) {
+    margin-left: 125px;
+}
+
+.bottomProduct {
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    width: 181px;
+    height: 298px;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    -webkit-animation: rotate1 10s linear infinite;
+    animation: rotate1 10s linear infinite;
+}
+
+.bottomProductL {
+    position: absolute;
+    bottom: 77px;
+    left: 45px;
+    width: 189px;
+    /*height: 219px;*/
+    height: 16.5%;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    -webkit-animation: rotate2 10s linear infinite;
+    animation: rotate2 10s linear infinite;
+}
+.bottomProductL img,
+.scoreProductBall img{
+    width: 100%;
+    height: 100%;
+}
+.scoreProductBall {
+    position: absolute;
+    bottom: 180px;
+    left: 240px;
+    width: 149px;
+    /*height: 120px;*/
+    height: 9%;
+    opacity: 0;
+    -webkit-animation: opacity2 1s 2s linear forwards;
+    -moz-animation: opacity2 1s 2s linear forwards;
+    -o-animation: opacity2 1s 2s linear forwards;
+    animation: opacity2 1s 2s linear forwards;
+}
+
+/*动画*/
+
+@-webkit-keyframes scale1 {
+    0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+@keyframes scale1 {
+    0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}

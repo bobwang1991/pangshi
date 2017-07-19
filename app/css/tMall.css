@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.tMall {
+    position: relative;
+    width: 604px;
+    height: 694px;
+    margin: 200px auto 0;
+    background: url("../images/tMallBg.png") no-repeat;
+}
+.tMall .title {
+    position: absolute;
+    top: 140px;
+    left: 95px;
+    font-size: 70px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 2px #ff1e42;
+}
+.tMall .tMallCon {
+    position: absolute;
+    top: 250px;
+    left: 77px;
+    font-size: 33px;
+    text-align: center;
+    line-height: 55px;
+    color: #ff1e42;
+}
+.tMall .tMallCon a {
+    font-size: 45px;
+    text-decoration: underline;
+    color: #ff1e42;
+}
+.tMall .btn {
+    position: absolute;
+    bottom: 105px;
+    left: 137px;
+    width: 326px;
+    height: 80px;
+}

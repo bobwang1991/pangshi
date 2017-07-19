@@ -1,0 +1,200 @@
+@charset "UTF-8";
+.personalCenter {
+    position: relative;
+    width: 633px;
+    margin: 60px auto 0;
+}
+.personalCenter .logoBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.personalCenter .operate {
+    position: absolute;
+    top: 18px;
+    right: 0;
+}
+.personalCenter .personCon {
+    width: 653px;
+    height: 604px;
+    padding-top: 124px;
+    background: url("../images/personCenterBg.png") no-repeat;
+}
+.personalCenter .personCon .brushFace {
+    position: relative;
+    width: 615px;
+    height: 584px;
+    margin: 0 auto;
+    background: url("../images/humanFaceBg.png") no-repeat;
+}
+.personalCenter .personCon .brushFace .faceBg {
+    position: absolute;
+    top: 22px;
+    left: 80px;
+    width: 457px;
+    height: 539px;
+    background: #fc4a70;
+    border-radius: 15px;
+}
+.personalCenter .personCon .brushFace .faceBg .face {
+    position: relative;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+.personalCenter .personCon .brushFace .faceBg .face img {
+    margin: 25px auto 0;
+    transform: scale(0, 0);
+    -webkit-animation: scale1 2s linear forwards;
+    animation: scale1 2s linear forwards;
+}
+.personalCenter .personCon .brushFace .faceBg .face .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    -webkit-transform: scale(0.1,0.1);
+    transform: scale(0.1,0.1);
+    opacity: 0;
+    -webkit-animation: lineTransform 2s 2s linear infinite;
+    animation: lineTransform 2s 2s linear infinite;
+}
+
+.bottomProductL {
+    position: absolute;
+    bottom: 40px;
+    left: 55px;
+    width: 189px;
+    /*height: 219px;*/
+    height: 16.5%;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    -webkit-animation: rotate2 10s linear infinite;
+    animation: rotate2 10s linear infinite;
+}
+.productBall img,
+.bottomProductL img {
+    width: 100%;
+    height: 100%;
+}
+.productBall {
+    position: absolute;
+    bottom: 150px;
+    left: 260px;
+    width: 149px;
+    /*height: 120px;*/
+    height: 9%;
+    opacity: 0;
+    -webkit-animation: opacity2 1s 2s linear forwards;
+    -moz-animation: opacity2 1s 2s linear forwards;
+    -o-animation: opacity2 1s 2s linear forwards;
+    animation: opacity2 1s 2s linear forwards;
+}
+.bottomProductR {
+    position: absolute;
+    bottom: 180px;
+    right: 70px;
+    width: 89px;
+    height: 122px;
+}
+.faceBtn {
+    position: absolute;
+    bottom: 60px;
+    left: 260px;
+    width: 289px;
+    height: 78px;
+}
+.faceBtn input {
+    position: absolute;
+    width: 289px;
+    height: 78px;
+    opacity: 0;
+}
+.faceBtn label {
+    position: absolute;
+    display: block;
+    width: 289px;
+    height: 78px;
+    background: url("../images/btnBrush_03.png") no-repeat;
+}
+
+/*动画*/
+
+@-webkit-keyframes scale1 {
+    0% {
+        transform: scale(0, 0);
+    }
+    90% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes scale1 {
+    0% {
+        transform: scale(0, 0);
+    }
+    90% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@-webkit-keyframes lineTransform {
+    0% {
+        top: 0;
+        transform: scale(0.1,0.1);
+        opacity: 0;
+    }
+    20% {
+        top: 90px;
+        transform: scale(0.6,0.6);
+        opacity: 1;
+    }
+    50% {
+        top: 270px;
+        transform: scale(0.75,0.75);
+        opacity: 1;
+    }
+    70% {
+        top: 345px;
+        transform: scale(0.6,0.6);
+        opacity: 1;
+    }
+    100% {
+        top: 480px;
+        transform: scale(0.1,0.1);
+        opacity: 0;
+    }
+}
+@keyframes lineTransform {
+    0% {
+        top: 0;
+        transform: scale(0.1,0.1);
+        opacity: 0;
+    }
+    20% {
+        top: 90px;
+        transform: scale(0.6,0.6);
+        opacity: 1;
+    }
+    50% {
+        top: 270px;
+        transform: scale(0.75,0.75);
+        opacity: 1;
+    }
+    70% {
+        top: 345px;
+        transform: scale(0.6,0.6);
+        opacity: 1;
+    }
+    100% {
+        top: 480px;
+        transform: scale(0.1,0.1);
+        opacity: 0;
+    }
+}

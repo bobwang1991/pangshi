@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+        <title>颜值提款机</title>
+        <link rel="stylesheet" href="css/normal-style.css">
+        <link rel="stylesheet" href="css/public.css">
+        <link rel="stylesheet" href="css/brush.css">
+        <link rel="stylesheet" href="css/brushFinal.css">
+        <link rel="stylesheet" href="css/popUp.css">
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="brush">
+                <div class="brushCon">
+                    <div class="faceImg">
+                        <img src="images/faceImg.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="loading rotate">
+                    <img src="images/loading.png" alt="">
+                </div>
+
+                <div class="btn">
+                    <a href="brush.html">
+                        <img src="images/btnCalute.png" alt="">
+                        <!--
+                        <input type="file" id="file" value="">
+                        <label for="file"></label>
+                        -->
+                    </a>
+                    <a href="personCenter.html">
+                        <img src="images/reject.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="noticeTxt">
+                <!--*不是你的颜值不稳定，光线、角度、距离等都会影响刷脸分数哒~-->
+                *不是你的颜值不稳定，光线、角度、距离等<br/>
+                都会影响刷脸分数哒，还要记得摘掉眼镜哦
+            </div>
+
+            <div id="popUp">
+                <div class="finshBg">
+                    提交成功！
+                </div>
+                <div class="btn">
+                    <a href="personCenter.html"><img src="images/continueBtn.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript">
+            common.phoneH5();
+            common.windowHeight();
+            common.showPopUp({
+                btn : $('.shoppingInfo .btn'),
+                obj1 : $('#popUp'),
+                obj2 : $('.shoppingInfo')
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.shoppingInfo {
+    position: relative;
+    width: 543px;
+    margin: 163px auto 0;
+    background: url("../images/shoppingInfoBg.png") no-repeat;
+    padding: 116px 0 40px;
+}
+.shoppingInfo .name {
+    width: 414px;
+    margin: 0 auto;
+    padding-bottom: 55px;
+}
+.shoppingInfo .name label {
+    display: block;
+    font-size: 50px;
+    color: #fc4a70;
+}
+.shoppingInfo .name input {
+    width: 414px;
+    height: 72px;
+    line-height: 72px;
+    background: url("../images/inputShoppingInfo.png") no-repeat;
+    border: none;
+    outline: none;
+    font-size: 40px;
+    text-indent: 0.5em;
+}
+.shoppingInfo .btn {
+    width: 242px;
+    height: 80px;
+    margin: 0 auto;
+}
+.shoppingInfo .btn input {
+    width: 242px;
+    height: 80px;
+    background: url("../images/submitBtn.png") no-repeat;
+    border: none;
+    outline: none;
+}

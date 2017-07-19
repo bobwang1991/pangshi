@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.operational {
+    position: relative;
+    width: 662px;
+    height: 1106px;
+    margin: 30px auto 0;
+    background: url("../images/operationalBG.png") no-repeat;
+}
+.title {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #ff577b;
+    font-size: 40px;
+    text-align: center;
+}
+.title span {
+    font-size: 50px;
+}
+
+.rightUse {
+    position: absolute;
+    top: 330px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 560px;
+}
+.rightUse img {
+    width: 100%;
+}
+
+.notice {
+    font-size: 30px;
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: #ff577b;
+}
+
+.operationalBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 289px;
+    height: 78px;
+}

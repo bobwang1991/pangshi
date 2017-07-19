@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.home {
+    position: relative;
+    width: 618px;
+    height: 987px;
+    margin: 78px auto 0;
+    background: url("../images/indexBg.png") no-repeat;
+    overflow: hidden;
+}
+.home .dialog-sec {
+    position: absolute;
+    top: 143px;
+    left: 90px;
+    width: 431px;
+    height: 111px;
+    background: url("../images/dialog-long.png") no-repeat;
+    font-size: 23px;
+    line-height: 35px;
+    color: #ff345f;
+    padding: 15px 0 0 30px;
+    opacity: 0;
+    -webkit-animation:opacity1 1.5s 2.5s linear forwards;
+    animation:opacity1 1.5s 2.5s linear forwards;
+}
+.home .dialog-fir {
+    position: absolute;
+    top: 281px;
+    right: 62px;
+    width: 347px;
+    height: 111px;
+    background: url("../images/dialog-short.png") no-repeat;
+    font-size: 23px;
+    line-height: 35px;
+    color: #ff345f;
+    padding: 15px 0 0 30px;
+    opacity: 0;
+    -webkit-animation:opacity1 1s 1.5s linear forwards;
+    animation:opacity1 1s 1.5s linear forwards;
+}
+.home .mirror {
+    position: absolute;
+    bottom: 142px;
+    left: 56px;
+    width: 251px;
+    height: 416px;
+    background: url("../images/mirror.png") no-repeat;
+    transform: scale(0, 0);
+    -webkit-animation: transform1 1s linear forwards;
+    animation: transform1 1s linear forwards;
+}
+.home .mirror img {
+    position: absolute;
+    top: 24px;
+    left: 23px;
+    opacity: 0;
+    -webkit-animation:opacity1 1s 2s linear forwards;
+    animation:opacity1 1s 2s linear forwards;
+}
+.home .btnHome {
+    position: absolute;
+    bottom: 0;
+    left: 158px;
+    width: 289px;
+    height: 93px;
+    opacity: 0;
+    -webkit-animation:opacity1 1s 3.5s linear forwards;
+    animation:opacity1 1s 3.5s linear forwards;
+}
+
+/*动画*/
+@-webkit-keyframes transform1 {
+    0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+@keyframes transform1 {
+    0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+@-webkit-keyframes opacity1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes opacity1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

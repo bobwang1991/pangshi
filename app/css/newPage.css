@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.newPage {
+    position: relative;
+    width: 634px;
+    height: 76%;
+    margin: 9.4% auto 0;
+    background: url("../images/newPageBg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.newPage .insideNewPageBg {
+    position: absolute;
+    top: 13.7%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 560px;
+    height: 68.5%;
+    background: url("../images/newPageBgInside.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.newPage .insideNewPageBg .newPageTxt {
+    position: absolute;
+    top: 4%;
+    left: 0;
+    right: 0;
+    font-size: 38px;
+    text-align: center;
+    line-height: 41px;
+}
+.newPage .insideNewPageBg .newPageTxt span {
+    color: #fc4a70;
+    font-size: 42px;
+}
+
+.newPage .insideNewPageBg .productPic {
+    position: absolute;
+    bottom: 4%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 474px;
+    height: 68.5%;
+}
+.newPage .insideNewPageBg .productPic img {
+    width: 100%;
+    height: 100%;
+}
+
+.newPage .newPageBtn {
+    width: 289px;
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

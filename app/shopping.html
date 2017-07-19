@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+        <title>颜值提款机</title>
+        <link rel="stylesheet" href="css/normal-style.css">
+        <link rel="stylesheet" href="css/public.css">
+        <link rel="stylesheet" href="css/myselfCenter.css">
+        <link rel="stylesheet" href="css/shopping.css">
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+    <body>
+    <div id="wrap">
+        <div class="shopping">
+            <div class="personal clearfix">
+                <a href="myselfCenter.html"><img src="images/personalCenter.png" alt=""></a>
+                <span>个人中心</span>
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <div class="shoppingCon">
+                <div class="clearfix">
+                    <div class="scoreCollect"><span>1200</span>积分</div>
+                    <div id="product-01" class="product clearfix">
+                        <div>
+                            <img src="images/product-01.jpg" alt="">
+                            <span>旁氏米粹润泽<br/>洁面乳100g</span>
+                        </div>
+                        <div>
+                            <img src="images/product-02.jpg" alt="">
+                            <span>旁氏清透净澈<br/>洁面乳100g</span>
+                        </div>
+                        <div>
+                            <img src="images/product-03.jpg" alt="">
+                            <span>旁氏米粹润泽<br/>洁面乳100g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="scoreCollect"><span>1800</span>积分</div>
+                    <div id="product-02" class="product clearfix">
+                        <div>
+                            <img src="images/product-04.jpg" alt="">
+                            <span>旁氏米粹润泽<br/>洁面乳150g</span>
+                        </div>
+                        <div>
+                            <img src="images/product-05.jpg" alt="">
+                            <span>旁氏清透净澈<br/>洁面乳150g</span>
+                        </div>
+                        <div>
+                            <img src="images/product-06.jpg" alt="">
+                            <span>旁氏米粹润泽<br/>洁面乳150g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div id="product-03" class="productOnly">
+                        <div class="scoreTitle"><span>2200</span>积分</div>
+                        <div class="productPic">
+                            <div>
+                                <img src="images/product-07.jpg" alt="">
+                                <span>旁氏无瑕透白精致<br/>防护日霜50g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="product-04" class="productOnly">
+                        <div class="scoreTitle"><span>2200</span>积分</div>
+                        <div class="productPic">
+                            <div>
+                                <img src="images/product-08.jpg" alt="">
+                                <span>旁氏深海胶原补水<br/>保湿精华露30ml</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shoppingBtn scaleBtnAnimated">
+                <a href="tMall.html">
+                    <img src="images/btn-03.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div id="popUp">
+            <div class="popUpBox">
+                <div class="title"></div>
+                <div class="popContent">
+                    你的积分：<span class="myScore">1300</span><br/>
+                    所需积分：<span class="needScore"></span><br/>
+                    奖品剩余：<span class="num"></span>
+                    <span class="notice">（奖品有限，兑完即止）</span>
+                </div>
+                <div class="btn">
+                    <a href="shoppingInfo.html"><img src="images/exchangeBtn.png" alt=""></a>
+                </div>
+                <div class="noScore">
+                    你的积分还不够哦，继续<br/>
+                    刷脸赚积分吧!
+                </div>
+                <div class="close"><img src="images/close.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+        common.phoneH5();
+        common.windowHeight();
+        common.showPopUpProduct({
+            obj1 : 'product-01',
+            obj2 : 'product-02',
+            obj3 : 'product-03',
+            obj4 : 'product-04',
+            popUp : 'popUp',
+            title : '.title',
+            need : 'span.needScore',
+            num : 'span.num',
+            close : '.close'
+        });
+    </script>
+    </body>
+</html>

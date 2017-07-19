@@ -1,0 +1,152 @@
+@charset "UTF-8";
+.mySelfCenter {
+    position: relative;
+    width: 653px;
+    height: 1004px;
+    margin: 74px auto 0;
+    background: url("../images/myselfCenterBg.png") no-repeat;
+}
+/*个人中心2*/
+.mySelfCenter .myself {
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.mySelfCenter .myself a {
+    color: #ff577b;
+}
+.mySelfCenter .myself img {
+    float: left;
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+}
+.mySelfCenter .myself .name {
+    float: left;
+    font-size: 35px;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-top: 15px;
+    line-height: 35px;
+}
+.mySelfCenter .myself .name span {
+    display: block;
+}
+.mySelfCenter .myself .name span:last-child {
+    font-family: 'Arial';
+}
+
+/*logo*/
+.mySelfCenter .logo {
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+
+/*内容区域*/
+/*.currentIntegral {
+    position: absolute;
+    top: 129px;
+    left: 50px;
+    width: 560px;
+    height: 742px;
+    background: url("../images/myselfTxtBg.png") no-repeat;
+}*/
+
+.currentIntegral {
+    position: absolute;
+    top: 129px;
+    left: 0;
+    width: 100%;
+    height: 742px;
+    background: url("../images/myselfTxtBg.png") no-repeat;
+    background-position-x: 40px;
+}
+
+.currentIntegral .currentIntegralCon {
+    /*width: 430px;*/
+    width: 500px;
+    height: 673px;
+    margin: 47px auto 0;
+}
+.currentIntegral .currentIntegralCon .scoleCurrent {
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    color: #ff1e42;
+}
+.currentIntegral .currentIntegralCon .scoleCurrent span {
+    display: block;
+}
+.currentIntegral .currentIntegralCon .scoleCurrent font {
+    font-size: 70px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 2px #ff1e42;
+}
+.currentIntegral .currentIntegralCon .txtRanking {
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    color: #ff1e42;
+    margin: 20px 0 65px;
+}
+.currentIntegral .currentIntegralCon .txtRanking span.bigTxt {
+    font-size: 45px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 2px #ff1e42;
+}
+.currentIntegral .currentIntegralCon .personScole {
+    /*width: 430px;*/
+    height: 332px;
+    overflow-y: scroll;
+}
+.currentIntegral .currentIntegralCon .personScole dl {
+    /*padding: 0 30px;*/
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.currentIntegral .currentIntegralCon .personScole dl dt {
+    float: left;
+    width: 105px;
+    height: 104px;
+}
+.currentIntegral .currentIntegralCon .personScole dl dt img {
+    width: 105px;
+    height: 104px;
+}
+.currentIntegral .currentIntegralCon .personScole dl dd {
+    float: left;
+    height: 104px;
+    line-height: 144px;
+    font-size: 32px;
+    margin-left: 20px;
+    color: #ff1e42;
+}
+
+.currentIntegral .currentIntegralCon .personScole dl dd span.nameTxt {
+    display: inline-block;
+    width: 224px;
+    line-height: 35px;
+    word-break:break-all;
+}
+
+.currentIntegral .currentIntegralCon span.more {
+    display: block;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    line-height: 0;
+    color: #ff1e42;
+}
+
+/*按钮*/
+.mySelfCenter .btn {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    width: 100%;
+}
+.mySelfCenter .btn a {
+    float: left;
+    margin-left: 40px;
+}

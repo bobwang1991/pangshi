@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.shopping {
+    position: relative;
+    width: 710px;
+    height: 1021px;
+    margin: 60px auto 0;
+    background: url("../images/shooppingBg.png") no-repeat;
+}
+
+.shopping .logo {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 203px;
+    height: 86px;
+}
+
+.shoppingCon {
+    width: 593px;
+    height: 800px;
+    margin: 0 auto 0;
+}
+.shoppingCon dl {
+    margin-bottom: 10px;
+}
+.shoppingCon dl dt {
+    float: left;
+    width: 186px;
+    height: 183px;
+}
+.shoppingCon dl dt img {
+    width: 181px;
+    height: 183px;
+}
+.shoppingCon dl dd {
+    position: relative;
+    float: right;
+    width: 407px;
+    height: 140px;
+    background: url("../images/productBg.png") no-repeat;
+    margin-top: 50px;
+}
+.shoppingCon dl dd .productName {
+    font-size: 40px;
+    text-indent: 24px;
+    line-height: 60px;
+    padding-top: 10px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 1px #ff1e42;
+}
+.shoppingCon dl dd  .productPrice {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #ff3560;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 9px;
+}
+
+.shoppingBtn {
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    width: 391px;
+    height: 71px;
+}

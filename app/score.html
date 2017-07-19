@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+        <title>颜值提款机</title>
+        <link rel="stylesheet" href="css/normal-style.css">
+        <link rel="stylesheet" href="css/public.css">
+        <link rel="stylesheet" href="css/score.css">
+        <link rel="stylesheet" href="css/randomScore.css">
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="scole">
+                <div class="personal">
+                    <a href="myselfCenter.html"><img src="images/personalCenter.png" alt=""></a>
+                    <span>个人中心</span>
+                </div>
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="scoleStarBg">
+                    <div class="scoleStar" OnLoad="swapPic()">
+                        <img class="js-chickendinner" src="#" alt="">
+                    </div>
+                    <div class="scoleFinal">
+                        您共获得了<br/>
+                        <span class="bigTxt" id="ResultNum"></span>
+                        颜值分
+                    </div>
+                </div>
+                <div class="smallTxt">
+                    <span>脸型</span>
+                    <span>肤质</span>
+                    <span>肌龄</span>
+                    <span>肤色</span>
+                    <span>五官</span>
+                </div>
+                <div class="txt">
+                    <p class="title">和你做朋友的一定是真爱！！！</p>
+                    <p class="txtCon">
+                        目前排名：第<span>18</span>名<br/>
+                        距离上一排名还差30颜值分
+                    </p>
+                </div>
+            </div>
+            <div class="scoreBtn clearfix">
+                <div>
+                    <a href="personCenter.html"><img src="images/btn-01.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="share.html"><img src="images/btn-02.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="tMall.html"><img src="images/btn-03.png" alt=""></a>
+                </div>
+            </div>
+            <div class="bottomProductL">
+                <img src="images/bottomProduct.png" alt="">
+            </div>
+            <div class="scoreProductBall">
+                <img src="images/bottomProductBall.png" alt="">
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/vendor/chickendinner.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript">
+            common.phoneH5();
+            common.windowHeight();
+            common.scoleRandonNum();
+            common.randomPicLoad();
+        </script>
+    </body>
+</html>

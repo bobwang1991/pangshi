@@ -1,0 +1,24 @@
+/*完成*/
+#popUp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, .6);
+    display: none;
+}
+#popUp .finshBg {
+    width: 542px;
+    height: 495px;
+    margin: 295px auto 0;
+    background: url("../images/finish.png") no-repeat;
+    font-size: 90px;
+    color: #ff1e42;
+    text-align: center;
+    line-height: 495px;
+}
+#popUp .btn {
+    width: 242px;
+    height: 80px;
+    margin: 50px auto 0;
+}

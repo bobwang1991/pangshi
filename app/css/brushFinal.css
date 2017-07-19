@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.brush .btn {
+    left: 37px;
+    width: 100%;
+}
+.brush .btn a {
+    float: left;
+    margin-left: 40px;
+}
+
+.brush .btn input {
+    width: 241px;
+    height: 80px;
+    opacity: 0;
+}
+.brush .btn label {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 241px;
+    height: 80px;
+    background: url("../images/btnCalute.png") no-repeat;
+}

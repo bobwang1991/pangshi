@@ -1,0 +1,163 @@
+@charset "UTF-8";
+.imgh {
+    height: 100%;
+    margin: 0 auto;
+}
+#wrap {
+    position: relative;
+    width: 100%;
+    max-width: 770px;
+    min-width: 320px;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.scaleBtnAnimated {
+    animation: scale2 1s linear infinite;
+}
+
+.personal img {
+    float: left;
+    width: 93px;
+    height: 90px;
+    border-radius: 50%;
+}
+.personal span {
+    float: left;
+    width: 150px;
+    line-height: 90px;
+    font-size: 35px;
+    text-align: center;
+    color: #ff1e42;
+}
+
+@keyframes scale2 {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.1,1.1);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+@-webkit-keyframes rotate2 {
+    0% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    10% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    20% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    30% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    40% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    50% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    60% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    70% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    80% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    90% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+}
+@-webkit-keyframes opacity2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes opacity2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes opacity2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes opacity2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes rotate2 {
+    0% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    10% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    20% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    30% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    40% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    50% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    60% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    70% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    80% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    90% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+}

@@ -1,0 +1,179 @@
+@charset "UTF-8";
+.shopping {
+    position: relative;
+    width: 710px;
+    height: 1077px;
+    margin: 60px auto 0;
+    background: url("../images/shooppingBg.png") no-repeat;
+}
+
+.shopping .logo {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 203px;
+    height: 86px;
+}
+
+.shoppingCon {
+    width: 601px;
+    height: 845px;
+    margin: 0 auto 0;
+}
+.shoppingCon > div {
+    position: relative;
+    margin-bottom: 11px;
+}
+.shoppingCon > div:nth-child(1) {
+    width: 100%;
+    height: 274px;
+    background: url("../images/productCollect.png") no-repeat;
+}
+.shoppingCon > div:nth-child(2) {
+    width: 100%;
+    height: 274px;
+    background: url("../images/productCollect.png") no-repeat;
+}
+.shoppingCon > div:nth-child(3) {
+    width: 100%;
+}
+
+/*积分*/
+.shoppingCon > div .scoreCollect {
+    position: absolute;
+    top: -23px;
+    left: 215px;
+    font-size: 38px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 2px #ff1e42;
+}
+.shoppingCon > div .scoreCollect span {
+    font-size: 48px;
+}
+/*产品图*/
+.shoppingCon > div .product {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+.shoppingCon > div .product > div {
+    float: left;
+    margin-left: 54px;
+}
+.shoppingCon > div .product > div:first-child {
+    margin-left: 0;
+}
+/*产品图下文字*/
+.shoppingCon > div .product > div span {
+    display: block;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #ff1e42;
+}
+.shoppingCon > div .product > div > img,
+.shoppingCon > div .productPic > div > img{
+    width: 100%;
+    margin: 0 auto;
+}
+/*单独产品*/
+.shoppingCon > div .productOnly {
+    float: left;
+    margin: 0 20px;
+}
+.shoppingCon > div .productOnly:first-child {
+    margin-left: 80px;
+}
+.shoppingCon > div .productOnly .scoreTitle {
+    font-size: 38px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 2px #ff1e42;
+}
+.shoppingCon > div .productOnly .scoreTitle span {
+    font-size: 48px;
+}
+.shoppingCon > div .productOnly .productPic {
+    width: 161px;
+    margin: 0 auto;
+}
+.shoppingCon > div .productOnly .productPic span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ff1e42;
+}
+
+.shoppingBtn {
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    width: 391px;
+    height: 71px;
+}
+
+/*弹窗*/
+#popUp {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    background: rgba(255, 255, 255, .55);
+    display: none;
+}
+#popUp .popUpBox {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 544px;
+    height: 681px;
+    background: url("../images/popUpBoxBg.png") no-repeat;
+}
+#popUp .popUpBox .title {
+    margin: 135px 0 30px 0;
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 1px #ff1e42;
+}
+#popUp .popUpBox .popContent {
+    font-size: 46px;
+    color: #ff1e42;
+    padding-left: 40px;
+    line-height: 60px;
+    margin-bottom: 63px;
+}
+#popUp .popUpBox .popContent span.notice {
+    display: block;
+    font-size: 40px;
+}
+#popUp .popUpBox .btn {
+    width: 326px;
+    margin: 0 auto;
+}
+#popUp .popUpBox .noScore {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 493px;
+    background: #ffd6e0;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 20px 0 36px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 1px #ff1e42;
+    display: none;
+}
+.close {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 40px;
+}
